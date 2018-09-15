@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analog Clock</title>
+  <script type="text/javascript" src="script.js"></script>
+  <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="analog-clock">
+
+    <svg id="clock-svg"
+         width="140"
+         height="140"
+         viewBox="0, 0, 140, 140"
+         preserveAspectRatio="xMidYMid">
+
+      <circle id="clock-face" cx="70" cy="70" r="65"></circle>
+
+      <line id="h-hand" x1="70" y1="70" x2="70" y2="38"></line>
+      <line id="m-hand" x1="70" y1="70" x2="70" y2="20"></line>
+      <line id="s-hand" x1="70" y1="70" x2="70" y2="12"></line>
+      <line id="s-tail" x1="70" y1="70" x2="70" y2="56"></line>
+
+      <text x="62" y="18">12</text>
+      <text x="95" y="25">1</text>
+      <text x="116" y="46">2</text>
+      <text x="126" y="75">3</text>
+      <text x="116" y="104">4</text>
+      <text x="95" y="124">5</text>
+      <text x="66" y="132">6</text>
+      <text x="38" y="124">7</text>
+      <text x="16" y="104">8</text>
+      <text x="7" y="75">9</text>
+      <text x="15" y="46">10</text>
+      <text x="35" y="25">11</text>
+
+    </svg>
+
+    <div class="time-text">
+      <span id="hr">00</span>
+      <span>:</span>
+      <span id="min">00</span>
+      <span>:</span>
+      <span id="sec">00</span>
+      <span id="suffix">--</span>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
